@@ -1,0 +1,5 @@
+>  example6_7  <- read.table ("example6_6.csv", header=TRUE, sep=",")
+>  attach(example6_7)
+>  aggregate (sales, by=list(product=product), FUN=mean)
+>  aggregate (sales, by=list(product), FUN=sd)
+>  detach(example6_7)

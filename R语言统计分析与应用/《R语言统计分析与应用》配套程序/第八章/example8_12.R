@@ -1,0 +1,8 @@
+>  Example8_12  <- read.table ("example8_12.csv", header=TRUE, sep=",")
+>  attach(Example8_12)
+>  type  <-factor(type, order=FALSE)
+>  time  <-factor(time, order=FALSE)
+>  subject  <-factor(subject, order=FALSE)
+>  fit <- aov(rate ~type*time +Error(subject/time))
+>  summary(fit)
+>  detach(Example8_12)

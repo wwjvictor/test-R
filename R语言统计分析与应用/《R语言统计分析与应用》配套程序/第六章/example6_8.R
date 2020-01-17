@@ -1,0 +1,5 @@
+>  example6_8  <- read.table ("example6_6.csv", header=TRUE, sep=",")
+>  attach(example6_8)
+>  mystas <-function(x)(c(n=length(x), mean=mean(x),  sd=sd(x)))
+>  by(sales, product, FUN=mystas)
+>  detach(example6_8)

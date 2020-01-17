@@ -1,0 +1,7 @@
+>  Example13_7  <- read.table ("example13_7.csv", header=TRUE, sep=",")
+>  attach(Example13_7)
+>  mytable  <-  xtabs(~a + b)
+>  library(gmodels)
+>  CrossTable(a, b)
+>  library(vcdExtra)
+>  CMHtest(mytable)     >  detach (Example13_7)

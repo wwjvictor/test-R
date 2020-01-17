@@ -1,0 +1,6 @@
+>  example14_18  <- read.table ("example14_18.csv", header=TRUE, sep=",")
+>  attach(example14_18)
+>  friedman.test (rate~ treat|block)
+>  library(PMCMR)
+>  posthoc.friedman.nemenyi.test(rate,treat,block)
+>  detach(example14_18)

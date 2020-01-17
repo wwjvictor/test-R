@@ -1,0 +1,12 @@
+>  Example8_3  <- read.table ("example8_3.csv", header=TRUE, sep=",")
+>  attach(Example8_3)
+>  table(brand)
+>  aggregate(wear, by=list(brand), FUN=mean)
+>  aggregate(wear, by=list(brand), FUN=sd)
+>  fit <- aov(wear ~ brand)
+>  summary(fit)
+
+>  library(gplots)
+>  plotmeans(wear~brand,xlab="brand", ylab="Ä¥ËðÊ±¼ä", main="Mean Plot\nwith 95% CI")
+>  detach (Example8_3)
+>  TukeyHSD(fit)

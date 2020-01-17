@@ -1,0 +1,6 @@
+>  Example9_1  <- read.table ("example9_1.csv", header=TRUE, sep=",")
+>  attach(Example9_1)
+>  plot(x1, x2)
+>  cor(Example9_1, method="pearson")
+>  cor.test(x1,x2, method="pearson")
+>  detach (Example9_1)

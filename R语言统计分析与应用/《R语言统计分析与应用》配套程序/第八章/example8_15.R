@@ -1,0 +1,8 @@
+>  library(multcomp)
+>  attach(litter)
+>  table (dose)
+>  aggregate (weight, by=list(dose), FUN=mean)
+>  aggregate (weight, by=list(dose), FUN=sd)
+> fit <-  aov(weight~gesttime + dose)
+> summary(fit)
+>  detach(litter)

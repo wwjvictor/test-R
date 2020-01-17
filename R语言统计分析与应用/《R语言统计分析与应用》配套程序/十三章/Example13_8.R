@@ -1,0 +1,5 @@
+>  Example13_8  <- read.table ("example13_8.csv", header=TRUE, sep=",")
+>  attach(Example13_8)
+>  cor(Example13_8, method="spearman")
+>  cor.test(a,  b, method="spearman")
+>  detach (Example13_8)

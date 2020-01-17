@@ -1,0 +1,6 @@
+> install.packages("survival")
+> library(survival)
+> Example11_6  <- read.table ("example11_6.csv", header=TRUE, sep=",")
+>  attach(Example11_6)
+>  model  <-  clogit(outcome~ exposure+ strata(id))
+>  detach(Example11_6)

@@ -1,0 +1,12 @@
+>  Example10_1  <- read.table ("example10_1.csv", header=TRUE, sep=",")
+>  library(MASS)
+>  attach(Example10_1)
+>  fit1  <-  lm(y~ x1 + x2 + x3)
+>  fit2 <- lm(y ~ 1)
+>  stepAIC(fit2,direction="both",scope=list(upper=fit1,lower=fit2))
+>  anova(fit1)
+>  summary (fit1)
+>  y
+>  fitted (fit1)
+>  residuals (fit1)
+>  detach (Example10_1)

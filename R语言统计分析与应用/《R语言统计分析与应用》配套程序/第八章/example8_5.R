@@ -1,0 +1,13 @@
+>  Example8_5  <- read.table ("example8_5.csv", header=TRUE, sep=",")
+>  attach(Example8_5)
+>  block  <-factor (block, order=FALSE)
+>  group  <-factor (group, order=FALSE)
+>  table(block, group)
+>  aggregate(x, by=list(group), FUN=mean)
+>  aggregate(x, by=list(group), FUN=sd)
+>  aggregate(x, by=list(block), FUN=mean)
+>  aggregate(x, by=list(block), FUN=sd)
+>  fit <- aov(x ~ block + group)
+>  summary(fit)
+>  detach(Example8_5)
+

@@ -1,0 +1,11 @@
+>  Example9_4  <- read.table ("example9_4.csv", header=TRUE, sep=",")
+>  attach(Example9_4)
+>  plot(x, y)
+>  fit  <-  lm(y~x)
+>  anova(fit)
+>  summary (fit)
+>  confint(fit)
+>  y
+>  fitted (fit)
+>  residuals (fit)
+>  detach (Example9_4)

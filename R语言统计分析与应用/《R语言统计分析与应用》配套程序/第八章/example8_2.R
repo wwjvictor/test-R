@@ -1,0 +1,12 @@
+>  Example8_2  <- read.table ("example8_2.csv", header=TRUE, sep=",")
+>  attach(Example8_2)
+>  table(group)
+>  aggregate(x, by=list(group), FUN=mean)
+>  aggregate(x, by=list(group), FUN=sd)
+>  fit <- aov(x~group)
+>  summary(fit)
+
+>  library(gplots)
+>  plotmeans(x~group,xlab="age group", ylab="ÁÜ°ÍÏ¸°û×ª»¯ÂÊ£¨%£©", main="Mean Plot\nwith 95% CI")
+>  detach (Example8_2)
+>  TukeyHSD(fit)

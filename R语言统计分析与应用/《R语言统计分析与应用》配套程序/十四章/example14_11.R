@@ -1,0 +1,6 @@
+>  example14_11  <- read.table ("example14_11.csv", header=TRUE, sep=",")
+>  attach(example14_11)
+>  kruskal.test(rate ~ group)
+>  library(nparcomp)
+>  nparcomp(rate ~ group, data=example14_11, alternative = "two.sided")
+>  detach(example14_11)

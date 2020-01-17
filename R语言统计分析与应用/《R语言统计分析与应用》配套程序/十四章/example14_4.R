@@ -1,0 +1,5 @@
+>  example14_4  <- read.table ("example14_4.csv", header=TRUE, sep=",")
+>  attach(example14_4)
+>  mean(x1-x2)
+>  wilcox.test(x1, x2, conf.level=0.95)
+>  detach(example14_4)

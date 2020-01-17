@@ -1,0 +1,5 @@
+>  example6_9  <- read.table ("example6_6.csv", header=TRUE, sep=",")
+>  library(psych)
+>  attach(example6_9)
+>  describeBy(sales, product)
+>  detach(example6_9)

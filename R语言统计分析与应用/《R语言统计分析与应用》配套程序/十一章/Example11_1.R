@@ -1,0 +1,8 @@
+>  Example11_1  <- read.table ("example11_1.csv", header=TRUE, sep=",")
+>  attach(Example11_1)
+>  fit   <-  glm(bpd~weight,  family= binomial(), data=Example11_1)
+>  summary(fit)
+>  coefficients(fit)
+>  exp(coefficients(fit))
+>  exp (confint(fit))
+>  detach (Example11_1)

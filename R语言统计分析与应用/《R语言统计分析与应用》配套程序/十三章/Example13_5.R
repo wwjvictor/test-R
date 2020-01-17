@@ -1,0 +1,8 @@
+>  Example13_5  <- read.table ("example13_5.csv", header=TRUE, sep=",")
+>  attach(Example13_5)
+>  mytable  <-  xtabs(~a + b)
+>  library(gmodels)
+>  CrossTable(a, b)
+>  mcnemar.test(mytable)
+> Kappa.test(mytable, conf.level=0.95)
+>  detach (Example13_5)

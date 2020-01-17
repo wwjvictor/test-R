@@ -1,0 +1,7 @@
+>  Example13_2  <- read.table ("example13_2.csv", header=TRUE, sep=",")
+>  attach(Example13_2)
+>  mytable  <-  xtabs(~a + b)
+> library(gmodels)
+> CrossTable(a, b)
+>  chisq.test(mytable)
+>  detach (Example13_2)

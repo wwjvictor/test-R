@@ -1,0 +1,8 @@
+> install.packages(¡°survival¡±)
+> library(survival)
+>  example15_4  <- read.table ("example15_4.csv", header=TRUE, sep=",")
+>  attach(example15_4)
+> coxmodel  <- coxph(Surv(days, censor)~group)
+> coxmode2  <- coxph(Surv(days, censor)~group+renal)
+> anova(coxmodel,coxmode2)
+>  detach(example15_4)
